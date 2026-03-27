@@ -4,7 +4,7 @@
   "service_type": "email",
   "status": "ready",
   "time_created": "2026-03-27T00:00:00Z",
-  "description": "Test SMTP relay service using Mailpit as the upstream server. Emails sent through this service are captured by Mailpit and viewable at mail.svcpass.com. No actual email delivery occurs — intended for testing and development.",
+  "description": "Test SMTP relay service using Mailpit as the upstream server. Emails sent through this service are captured by Mailpit and viewable at mail.staging.svcmarket.com. No actual email delivery occurs — intended for testing and development.",
   "tags": [
     "email",
     "smtp",

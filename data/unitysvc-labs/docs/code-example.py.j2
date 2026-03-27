@@ -19,4 +19,4 @@ with smtplib.SMTP(smtp_host, smtp_port) as server:
     server.login('user', api_key)  # username is ignored, password = API key
     server.send_message(msg)
     print('Email sent successfully')
-    print('Check https://mail.svcpass.com to view the captured email')
+    print('Check https://mail.staging.svcmarket.com to view the captured email')
