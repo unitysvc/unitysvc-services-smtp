@@ -1,0 +1,22 @@
+import smtplib
+import os
+from email.mime.text import MIMEText
+
+# SMTP Gateway connection
+smtp_host = os.environ.get('SMTP_HOST', 'localhost')
+smtp_port = int(os.environ.get('SMTP_PORT', '2587'))
+api_key = os.environ['UNITYSVC_API_KEY']
+
+# Compose a test email
+msg = MIMEText('Hello from UnitySVC SMTP Gateway!')
+msg['Subject'] = 'Test Email via SMTP Gateway'
+msg['From'] = 'test@example.com'
+msg['To'] = 'recipient@example.com'
+
+# Send via the gateway
+with smtplib.SMTP(smtp_host, smtp_port) as server:
+    server.ehlo()
+    server.login('user', api_key)  # username is ignored, password = API key
+    server.send_message(msg)
+    print('Email sent successfully')
+    print('Check https://mail.svcpass.com to view the captured email')

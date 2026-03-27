@@ -1,0 +1,50 @@
+{
+  "schema": "listing_v1",
+  "status": "ready",
+  "time_created": "2026-03-27T00:00:00Z",
+  "display_name": "Test SMTP Relay (Mailpit)",
+  "currency": "USD",
+  "list_price": {
+    "type": "constant",
+    "price": "0",
+    "description": "Free — test service"
+  },
+  "user_access_interfaces": {
+    "SMTP Gateway": {
+      "access_method": "smtp",
+      "base_url": "${SMTP_GATEWAY_BASE_URL}"
+    }
+  },
+  "documents": {
+    "How to use this service": {
+      "category": "getting_started",
+      "description": "Guide to sending test emails through the SMTP gateway",
+      "file_path": "../../docs/description.md",
+      "is_active": true,
+      "is_public": true,
+      "mime_type": "markdown"
+    },
+    "Python code example": {
+      "category": "code_example",
+      "description": "Example code to send email via the SMTP gateway",
+      "file_path": "../../docs/code-example.py.j2",
+      "is_active": true,
+      "is_public": true,
+      "meta": {
+        "skip_test": true
+      },
+      "mime_type": "python"
+    },
+    "Connectivity test": {
+      "category": "connectivity_test",
+      "description": "Verify SMTP gateway is reachable",
+      "file_path": "../../docs/connectivity.sh.j2",
+      "is_active": true,
+      "is_public": false,
+      "meta": {
+        "skip_test": true
+      },
+      "mime_type": "bash"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "test-mailpit",
+  "schema": "offering_v1",
+  "service_type": "email",
+  "status": "ready",
+  "time_created": "2026-03-27T00:00:00Z",
+  "description": "Test SMTP relay service using Mailpit as the upstream server. Emails sent through this service are captured by Mailpit and viewable at mail.svcpass.com. No actual email delivery occurs — intended for testing and development.",
+  "tags": [
+    "email",
+    "smtp",
+    "testing",
+    "free"
+  ],
+  "capabilities": [
+    "smtp_relay"
+  ],
+  "payout_price": {
+    "description": "Free test service — no payout",
+    "percentage": "0",
+    "type": "revenue_share"
+  },
+  "upstream_access_config": {
+    "Mailpit SMTP": {
+      "access_method": "smtp",
+      "host": "mailpit",
+      "port": 1025,
+      "tls": false
+    }
+  }
+}
