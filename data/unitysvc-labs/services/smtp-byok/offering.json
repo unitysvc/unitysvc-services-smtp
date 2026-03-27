@@ -1,5 +1,5 @@
 {
-  "name": "byok-smtp",
+  "name": "smtp-byok",
   "schema": "offering_v1",
   "service_type": "email",
   "status": "ready",
