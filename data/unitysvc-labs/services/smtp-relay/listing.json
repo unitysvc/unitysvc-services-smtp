@@ -48,7 +48,7 @@
     "SMTP Gateway": {
       "access_method": "smtp",
       "base_url": "${SMTP_GATEWAY_BASE_URL}",
-      "routing_key": {"service": "{{ enrollment_vars.code }}"}
+      "routing_key": {"username": "{{ enrollment_vars.code }}"}
     }
   },
   "documents": {

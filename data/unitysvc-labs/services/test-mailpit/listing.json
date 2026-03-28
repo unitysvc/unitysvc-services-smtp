@@ -13,7 +13,7 @@
     "SMTP Gateway": {
       "access_method": "smtp",
       "base_url": "${SMTP_GATEWAY_BASE_URL}",
-      "routing_key": {"service": "test-mailpit"}
+      "routing_key": {"username": "test-mailpit"}
     }
   },
   "documents": {

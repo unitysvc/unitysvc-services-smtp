@@ -21,7 +21,7 @@
     "SMTP Gateway": {
       "access_method": "smtp",
       "base_url": "${SMTP_GATEWAY_BASE_URL}",
-      "routing_key": {"service": "smtp-byok"}
+      "routing_key": {"username": "smtp-byok"}
     }
   },
   "documents": {
