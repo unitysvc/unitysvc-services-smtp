@@ -10,7 +10,34 @@
     "description": "$0.001 per message relayed"
   },
   "service_options": {
-    "enrollment_vars": {
+    "user_parameters_schema": {
+      "type": "object",
+      "properties": {
+        "SMTP_HOST_SECRET": {
+          "type": "string",
+          "description": "Name of the customer secret containing the SMTP host"
+        },
+        "SMTP_PORT_SECRET": {
+          "type": "string",
+          "description": "Name of the customer secret containing the SMTP port"
+        },
+        "SMTP_USERNAME_SECRET": {
+          "type": "string",
+          "description": "Name of the customer secret containing the SMTP username"
+        },
+        "SMTP_PASSWORD_SECRET": {
+          "type": "string",
+          "description": "Name of the customer secret containing the SMTP password"
+        }
+      },
+      "required": [
+        "SMTP_HOST_SECRET",
+        "SMTP_PORT_SECRET",
+        "SMTP_USERNAME_SECRET",
+        "SMTP_PASSWORD_SECRET"
+      ]
+    },
+    "ops_testing_parameters": {
       "SMTP_HOST_SECRET": "SMTP_HOST",
       "SMTP_PORT_SECRET": "SMTP_PORT",
       "SMTP_USERNAME_SECRET": "SMTP_USERNAME",
