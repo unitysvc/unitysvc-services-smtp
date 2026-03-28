@@ -5,14 +5,8 @@
   "status": "ready",
   "time_created": "2026-03-27T00:00:00Z",
   "description": "Bring Your Own Key SMTP relay. Connect your own SMTP server (Gmail, SendGrid, Mailgun, SES, etc.) and send emails through the UnitySVC gateway. Customers provide their own SMTP credentials.",
-  "tags": [
-    "email",
-    "smtp",
-    "byok"
-  ],
-  "capabilities": [
-    "smtp_relay"
-  ],
+  "tags": ["email", "smtp", "byok"],
+  "capabilities": ["smtp_relay"],
   "payout_price": {
     "description": "No platform commission — customer uses own SMTP",
     "percentage": "100.00",
