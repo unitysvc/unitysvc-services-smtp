@@ -15,8 +15,8 @@
   "upstream_access_config": {
     "Mailpit SMTP": {
       "access_method": "smtp",
-      "host": "smtp.staging.svcmarket.com",
-      "port": 587,
+      "host": "mail.staging.svcmarket.com",
+      "port": 1025,
       "tls": false
     }
   }
