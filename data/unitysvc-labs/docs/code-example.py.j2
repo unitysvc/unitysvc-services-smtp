@@ -14,7 +14,7 @@ password = os.environ.get('PASSWORD', '')
 # Username is the service name (routing_key), password is your API key
 smtp_host = os.environ['SERVICE_BASE_URL']
 smtp_port = 587
-username = '{{ interface.routing_key.service }}'
+username = '{{ offering.name }}'
 password = os.environ['UNITYSVC_API_KEY']
 {% endif %}
 
