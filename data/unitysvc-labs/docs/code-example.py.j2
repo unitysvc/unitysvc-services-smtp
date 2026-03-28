@@ -17,7 +17,7 @@ parsed = urlparse(os.environ['SERVICE_BASE_URL'])
 smtp_host = parsed.hostname
 smtp_port = parsed.port or 587
 use_ssl = parsed.scheme == 'smtps'
-username = os.environ.get('SERVICE', '{{ offering.name }}')
+username = os.environ.get('USERNAME', '{{ offering.name }}')
 password = os.environ['UNITYSVC_API_KEY']
 {% endif %}
 
