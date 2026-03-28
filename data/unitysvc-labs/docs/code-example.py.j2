@@ -10,9 +10,11 @@ username = os.environ.get('USERNAME', '')
 password = os.environ.get('PASSWORD', '')
 {% else %}
 # Access via UnitySVC SMTP gateway
-smtp_host = os.environ.get('SMTP_HOST', 'localhost')
-smtp_port = int(os.environ.get('SMTP_PORT', '2587'))
-username = 'user'
+# SERVICE_BASE_URL is the gateway hostname (e.g., smtp.svcpass.com)
+# Username is the service name (routing_key), password is your API key
+smtp_host = os.environ['SERVICE_BASE_URL']
+smtp_port = 587
+username = '{{ interface.routing_key.service }}'
 password = os.environ['UNITYSVC_API_KEY']
 {% endif %}
 

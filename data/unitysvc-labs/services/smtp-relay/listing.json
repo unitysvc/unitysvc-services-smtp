@@ -47,7 +47,8 @@
   "user_access_interfaces": {
     "SMTP Gateway": {
       "access_method": "smtp",
-      "base_url": "${SMTP_GATEWAY_BASE_URL}/smtp-relay"
+      "base_url": "${SMTP_GATEWAY_BASE_URL}",
+      "routing_key": {"service": "smtp-relay"}
     }
   },
   "documents": {
