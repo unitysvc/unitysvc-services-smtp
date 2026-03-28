@@ -10,13 +10,10 @@ username = os.environ.get('USERNAME', '')
 password = os.environ.get('PASSWORD', '')
 {% else %}
 # Access via UnitySVC SMTP gateway
-# SERVICE_BASE_URL is e.g. smtps://smtp.svcpass.com:587
+# SERVICE_BASE_URL is the gateway hostname (e.g., smtp.svcpass.com)
 # Username is the service name (routing_key), password is your API key
-from urllib.parse import urlparse
-parsed = urlparse(os.environ['SERVICE_BASE_URL'])
-smtp_host = parsed.hostname
-smtp_port = parsed.port or 587
-use_ssl = parsed.scheme == 'smtps'
+smtp_host = os.environ['SERVICE_BASE_URL']
+smtp_port = 587
 username = os.environ.get('SERVICE', '{{ offering.name }}')
 password = os.environ['UNITYSVC_API_KEY']
 {% endif %}
@@ -28,15 +25,8 @@ msg['From'] = 'test@example.com'
 msg['To'] = 'recipient@example.com'
 
 # Send via SMTP
-{% if local_testing %}
-use_ssl = False
-{% endif %}
-if use_ssl:
-    server = smtplib.SMTP_SSL(smtp_host, smtp_port)
-else:
-    server = smtplib.SMTP(smtp_host, smtp_port)
+with smtplib.SMTP(smtp_host, smtp_port) as server:
     server.ehlo()
-with server:
     if username and password:
         server.login(username, password)
     server.send_message(msg)
