@@ -20,7 +20,7 @@
   ],
   "time_created": "2026-03-27T00:00:00Z",
   "upstream_access_config": {
-    "Mailpit SMTP": {
+    "mailpit_smtp": {
       "access_method": "smtp",
       "host": "smtp.staging.svcmarket.com",
       "port": 1025,
