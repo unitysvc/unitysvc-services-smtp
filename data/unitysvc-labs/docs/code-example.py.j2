@@ -13,7 +13,7 @@ password = os.environ.get('PASSWORD', '')
 # SERVICE_BASE_URL is smtp://host:port or smtps://host:port
 # Username is the service name (routing_key), password is your API key
 from urllib.parse import urlparse
-parsed = urlparse(os.environ['SERVICE_BASE_URL'])
+parsed = urlparse("{{ service_base_url }}")
 smtp_host = parsed.hostname
 smtp_port = parsed.port or 587
 use_ssl = parsed.scheme == 'smtps'
