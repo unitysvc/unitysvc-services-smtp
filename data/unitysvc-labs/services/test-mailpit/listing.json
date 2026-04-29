@@ -3,15 +3,7 @@
   "display_name": "Test SMTP Relay (Mailpit)",
   "documents": {
     "Connectivity test": {
-      "category": "connectivity_test",
-      "description": "Verify SMTP gateway is reachable",
-      "file_path": "../../docs/connectivity.sh.j2",
-      "is_active": true,
-      "is_public": false,
-      "meta": {
-        "skip_test": true
-      },
-      "mime_type": "bash"
+      "$doc_preset": "smtp_connectivity_v2"
     },
     "How to use this service": {
       "category": "getting_started",
