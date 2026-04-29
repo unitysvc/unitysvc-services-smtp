@@ -6,8 +6,8 @@ SMTP_HOST=${HOST:-localhost}
 SMTP_PORT=${PORT:-587}
 {% else %}
 # Gateway testing: parse SERVICE_BASE_URL (smtp://host:port)
-SMTP_HOST=$(echo "$SERVICE_BASE_URL" | sed -E 's|^smtps?://||' | cut -d: -f1)
-SMTP_PORT=$(echo "$SERVICE_BASE_URL" | sed -E 's|^smtps?://||' | cut -d: -f2 | cut -d/ -f1)
+SMTP_HOST=$(echo "{{ service_base_url }}" | sed -E 's|^smtps?://||' | cut -d: -f1)
+SMTP_PORT=$(echo "{{ service_base_url }}" | sed -E 's|^smtps?://||' | cut -d: -f2 | cut -d/ -f1)
 SMTP_HOST=${SMTP_HOST:-localhost}
 SMTP_PORT=${SMTP_PORT:-587}
 {% endif %}
