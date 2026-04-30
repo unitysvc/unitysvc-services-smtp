@@ -14,15 +14,11 @@
       "mime_type": "markdown"
     },
     "Python code example": {
-      "category": "code_example",
-      "description": "Example code to send email via BYOK SMTP relay",
-      "file_path": "../../docs/code-example.py.j2",
-      "is_active": true,
-      "is_public": true,
-      "meta": {
-        "skip_test": true
-      },
-      "mime_type": "python"
+      "$doc_preset": {
+        "name": "smtp_code_example",
+        "description": "Example code to send email via BYOK SMTP relay",
+        "meta": {"skip_test": true}
+      }
     }
   },
   "list_price": {
