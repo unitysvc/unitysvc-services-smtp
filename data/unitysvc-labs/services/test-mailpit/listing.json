@@ -16,8 +16,7 @@
     "Python code example": {
       "$doc_preset": {
         "name": "smtp_code_example",
-        "description": "Example code to send email via the SMTP gateway",
-        "meta": {"skip_test": true}
+        "description": "Example code to send email via the SMTP gateway"
       }
     }
   },
