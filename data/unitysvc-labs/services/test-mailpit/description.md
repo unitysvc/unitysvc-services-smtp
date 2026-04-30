@@ -1,6 +1,6 @@
 ## Test SMTP Relay
 
-This is a test SMTP relay service. Emails sent through this service are captured by Mailpit and can be viewed at [smtp.staging.svcmarket.com](https://smtp.staging.svcmarket.com).
+This is a test SMTP relay service. Emails sent through this service are captured by Mailpit and can be viewed at [mailpit.svcmarket.com](https://mailpit.svcmarket.com).
 
 **No actual email delivery occurs** — this service is for testing the SMTP gateway only.
 

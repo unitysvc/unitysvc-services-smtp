@@ -2,7 +2,7 @@
   "capabilities": [
     "smtp_relay"
   ],
-  "description": "Test SMTP relay service using Mailpit as the upstream server. Emails sent through this service are captured by Mailpit and viewable at smtp.staging.svcmarket.com. No actual email delivery occurs \u2014 intended for testing and development.",
+  "description": "Test SMTP relay service using Mailpit as the upstream server. Emails sent through this service are captured by Mailpit and viewable at mailpit.svcmarket.com. No actual email delivery occurs \u2014 intended for testing and development.",
   "name": "test-mailpit",
   "payout_price": {
     "description": "Free test service \u2014 no payout",
@@ -22,7 +22,7 @@
   "upstream_access_config": {
     "mailpit_smtp": {
       "access_method": "smtp",
-      "host": "smtp.staging.svcmarket.com",
+      "host": "mailpit.svcmarket.com",
       "port": 1025,
       "tls": false
     }

@@ -39,7 +39,7 @@
       "SMTP_USERNAME": ""
     },
     "ops_testing_parameters": {
-      "SMTP_HOST": "smtp.staging.svcmarket.com",
+      "SMTP_HOST": "mailpit.svcmarket.com",
       "SMTP_PASSWORD": "",
       "SMTP_PORT": "1025",
       "SMTP_USERNAME": ""
