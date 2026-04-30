@@ -8,21 +8,13 @@
     "How to use this service": {
       "category": "getting_started",
       "description": "Guide to configuring your own SMTP credentials for relay",
-      "file_path": "../../docs/byok-description.md",
+      "file_path": "byok-description.md",
       "is_active": true,
       "is_public": true,
       "mime_type": "markdown"
     },
     "Python code example": {
-      "category": "code_example",
-      "description": "Example code to send email via BYOK SMTP relay",
-      "file_path": "../../docs/code-example.py.j2",
-      "is_active": true,
-      "is_public": true,
-      "meta": {
-        "skip_test": true
-      },
-      "mime_type": "python"
+      "$doc_preset": "smtp_code_example"
     }
   },
   "list_price": {
@@ -39,7 +31,7 @@
       "SMTP_USERNAME": ""
     },
     "ops_testing_parameters": {
-      "SMTP_HOST": "smtp.staging.svcmarket.com",
+      "SMTP_HOST": "mailpit.svcmarket.com",
       "SMTP_PASSWORD": "",
       "SMTP_PORT": "1025",
       "SMTP_USERNAME": ""

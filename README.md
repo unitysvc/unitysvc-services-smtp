@@ -6,7 +6,7 @@ This repository hosts SMTP relay service data for the UnitySVC platform.
 
 ### test-mailpit
 
-Test SMTP relay service using Mailpit as upstream. Emails are captured and viewable at [smtp.staging.svcmarket.com](https://smtp.staging.svcmarket.com). No actual delivery occurs.
+Test SMTP relay service using Mailpit as upstream. Emails are captured and viewable at [mailpit.svcmarket.com](https://mailpit.svcmarket.com). No actual delivery occurs.
 
 ## Setup
 
