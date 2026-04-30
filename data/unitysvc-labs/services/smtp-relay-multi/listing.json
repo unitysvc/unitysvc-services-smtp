@@ -32,6 +32,9 @@
   },
   "schema": "listing_v1",
   "service_options": {
+    "enrollment_vars": {
+      "code": "{{ enrollment_code(6) }}"
+    },
     "ops_testing_parameters": {
       "SMTP_HOST_SECRET": "SMTP_HOST",
       "SMTP_PASSWORD_SECRET": "SMTP_PASSWORD",
